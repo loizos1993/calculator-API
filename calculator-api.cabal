@@ -1,0 +1,22 @@
+name:              calculator-api
+version:           0.0.1
+cabal-version:     >= 1.2
+build-type:        Simple
+
+executable         calculator-api
+    hs-source-dirs: .
+
+    main-is:           main.hs
+
+    extensions: ExtendedDefaultRules
+                TemplateHaskell
+                OverloadedStrings
+                TypeFamilies
+                ViewPatterns
+                FlexibleContexts
+
+    build-depends: base
+                 , yesod
+                 , split
+                 , text
+                 , clientsession
